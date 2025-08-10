@@ -234,7 +234,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/devonf/proprietary/vendor/etc/init/android.hardware.security.keymint-service.trustonic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service.trustonic.rc \
     vendor/motorola/devonf/proprietary/vendor/etc/init/bootperf.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/bootperf.rc \
     vendor/motorola/devonf/proprietary/vendor/etc/init/camerahalserver.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/camerahalserver.rc \
-    vendor/motorola/devonf/proprietary/vendor/etc/init/chipinfo_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/chipinfo_init.rc \
     vendor/motorola/devonf/proprietary/vendor/etc/init/fuelgauged_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_init.rc \
     vendor/motorola/devonf/proprietary/vendor/etc/init/fuelgauged_nvram_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_nvram_init.rc \
     vendor/motorola/devonf/proprietary/vendor/etc/init/gsm0710muxd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/gsm0710muxd.rc \
@@ -310,8 +309,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/devonf/proprietary/vendor/firmware/WIFI_RAM_CODE_soc2_2_1c_1.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/WIFI_RAM_CODE_soc2_2_1c_1.bin \
     vendor/motorola/devonf/proprietary/vendor/firmware/WMT_SOC.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/WMT_SOC.cfg \
     vendor/motorola/devonf/proprietary/vendor/firmware/WMT_SOC_CANCUNF.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/WMT_SOC_CANCUNF.cfg \
-    vendor/motorola/devonf/proprietary/vendor/firmware/WMT_SOC_CANCUNN_FEM.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/WMT_SOC_CANCUNN_FEM.cfg \
-    vendor/motorola/devonf/proprietary/vendor/firmware/WMT_SOC_devonn_epa.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/WMT_SOC_devonn_epa.cfg \
     vendor/motorola/devonf/proprietary/vendor/firmware/aw87xxx_acf.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw87xxx_acf.bin \
     vendor/motorola/devonf/proprietary/vendor/firmware/cps4035.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/cps4035.bin \
     vendor/motorola/devonf/proprietary/vendor/firmware/fm_cust.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/fm_cust.cfg \
@@ -1272,6 +1269,7 @@ PRODUCT_PACKAGES += \
     manifest_apuware_utils.xml \
     manifest_cameraprovider.xml \
     manifest_hwcomposer.xml \
+    manifest_media_c2_V1_2_default.xml \
     memtrack-mediatek.xml \
     SN1X0__RF-On.txt \
     autobt \
@@ -1280,7 +1278,6 @@ PRODUCT_PACKAGES += \
     ccci_fsd \
     ccci_mdinit \
     ccci_rpcd \
-    chipinfo \
     conninfra_loader \
     fpc_tee_test \
     fuelgauged \
@@ -1331,7 +1328,6 @@ PRODUCT_PACKAGES += \
     mtk_agpsd \
     muxreport \
     netdagent \
-    netdc \
     nvram_daemon \
     pnscr \
     pnscr_cal \
@@ -1695,3 +1691,9 @@ PRODUCT_PACKAGES += \
     vendor_lib64_mtk000_mipi_raw_IdxMgr_so \
     vendor_lib64_mtk000_mipi_raw_tuning_so \
     vendor_lib64_mtkcam_libmtkcam_streaminfo_plugin-p1stt_so
+
+PRODUCT_BOOT_JARS += \
+    mediatek-common \
+    mediatek-framework \
+    mediatek-ims-base \
+    mediatek-ims-oem-plugin

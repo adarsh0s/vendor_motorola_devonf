@@ -33528,6 +33528,15 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
+    name: "manifest_media_c2_V1_2_default.xml",
+    owner: "motorola",
+    src: "proprietary/vendor/etc/vintf/manifest/manifest_media_c2_V1_2_default.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
     name: "memtrack-mediatek.xml",
     owner: "motorola",
     src: "proprietary/vendor/etc/vintf/manifest/memtrack-mediatek.xml",
@@ -33711,14 +33720,6 @@ cc_prebuilt_binary {
         none: true,
     },
     prefer: true,
-    soc_specific: true,
-}
-
-sh_binary {
-    name: "chipinfo",
-    owner: "motorola",
-    src: "proprietary/vendor/bin/chipinfo",
-    filename: "chipinfo",
     soc_specific: true,
 }
 
@@ -35130,35 +35131,6 @@ cc_prebuilt_binary {
                 "libutils",
                 "libhidlbase",
                 "libifcutils_mtk",
-                "vendor.mediatek.hardware.netdagent@1.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "netdc",
-    owner: "motorola",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/netdc",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libhidlbase",
                 "vendor.mediatek.hardware.netdagent@1.0",
                 "libc++",
                 "libc",
