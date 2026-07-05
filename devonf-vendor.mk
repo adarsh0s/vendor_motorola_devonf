@@ -246,7 +246,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/devonf/proprietary/vendor/etc/init/init.vtservice_hidl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vtservice_hidl.rc \
     vendor/motorola/devonf/proprietary/vendor/etc/init/ipsec_mon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ipsec_mon.rc \
     vendor/motorola/devonf/proprietary/vendor/etc/init/lbs_hidl_service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/lbs_hidl_service.rc \
-    vendor/motorola/devonf/proprietary/vendor/etc/init/memtrack-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/memtrack-mediatek.rc \
     vendor/motorola/devonf/proprietary/vendor/etc/init/motorola.hardware.camera.imgtuner@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/motorola.hardware.camera.imgtuner@2.0-service.rc \
     vendor/motorola/devonf/proprietary/vendor/etc/init/mtk_agpsd_p.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtk_agpsd_p.rc \
     vendor/motorola/devonf/proprietary/vendor/etc/init/mtkrild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtkrild.rc \
@@ -644,7 +643,6 @@ PRODUCT_PACKAGES += \
     lib_ainr_enh \
     libaal_key \
     libadropbox \
-    libaedv \
     libappgamepq \
     libapu_mdw \
     libapu_mdw_batch \
@@ -1155,7 +1153,6 @@ PRODUCT_PACKAGES += \
     libimageio_plat_drv \
     libimageio_plat_pipe \
     liblpcnr \
-    libmemtrack_GL \
     libmfllcore \
     libmnl \
     libmsnr \
@@ -1226,8 +1223,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.apuware.hmp@1.0 \
     vendor.mediatek.hardware.audio@6.1 \
     vendor.mediatek.hardware.audio@7.1 \
-    vendor.mediatek.hardware.bluetooth.audio@2.1 \
-    vendor.mediatek.hardware.bluetooth.audio@2.2 \
     vendor.mediatek.hardware.camera.ccap@1.0 \
     vendor.mediatek.hardware.camera.frhandler@1.0 \
     vendor.mediatek.hardware.camera.isphal@1.0 \
@@ -1288,7 +1283,6 @@ PRODUCT_PACKAGES += \
     manifest_hwcomposer.xml \
     manifest_media_c2_V1_2_default.xml \
     manifest_vendor.dolby.hardware.dms.xml \
-    memtrack-mediatek.xml \
     SN1X0__RF-On.txt \
     autobt \
     bip_ap \
@@ -1307,7 +1301,6 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.4-service.widevine \
     android.hardware.gnss-service.mediatek \
     android.hardware.media.c2@1.2-mediatek-64b \
-    android.hardware.memtrack-service.mediatek \
     android.hardware.neuralnetworks-shim-service-mtk \
     android.hardware.secure_element@1.2-service-mediatek \
     android.hardware.security.keymint-service.trustonic \
@@ -1613,7 +1606,6 @@ PRODUCT_PACKAGES += \
     vendor_lib64_libimageio_plat_drv_so \
     vendor_lib64_libimageio_plat_pipe_so \
     vendor_lib64_liblpcnr_so \
-    vendor_lib64_libmemtrack_GL_so \
     vendor_lib64_libmfllcore_so \
     vendor_lib64_libmnl_so \
     vendor_lib64_libmpvr_so \

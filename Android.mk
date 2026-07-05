@@ -6,6 +6,6 @@ LOCAL_PATH := $(call my-dir)
 
 ifeq ($(TARGET_DEVICE),devonf)
 
-$(call add-radio-file-sha1-checked,radio/gpueb.img,c44ec7c1d13e8412839af661e906455b10df3cab)
+$(call add-radio-file-sha1-checked,radio/gpueb.img,e0203e4931a85aaa02ac6ca0834a185d07e5c32c)
 
 endif
