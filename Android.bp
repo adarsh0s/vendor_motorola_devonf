@@ -11419,7 +11419,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/libcodec2_mtk_vdec.so",
             ],
             shared_libs: [
-                "libformatter",
+                "libformatter_vendor",
                 "libdpframework",
                 "android.hardware.graphics.bufferqueue@2.0",
                 "libui",
@@ -11455,7 +11455,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libcodec2_mtk_vdec.so",
             ],
             shared_libs: [
-                "libformatter",
+                "libformatter_vendor",
                 "libdpframework",
                 "android.hardware.graphics.bufferqueue@2.0",
                 "libui",
@@ -11504,7 +11504,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/libcodec2_mtk_venc.so",
             ],
             shared_libs: [
-                "libformatter",
+                "libformatter_vendor",
                 "libdpframework",
                 "android.hardware.graphics.bufferqueue@2.0",
                 "libui",
@@ -11538,7 +11538,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libcodec2_mtk_venc.so",
             ],
             shared_libs: [
-                "libformatter",
+                "libformatter_vendor",
                 "libdpframework",
                 "android.hardware.graphics.bufferqueue@2.0",
                 "libui",
@@ -11955,7 +11955,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libformatter",
+    name: "libformatter_vendor",
+    stem: "libformatter",
     owner: "motorola",
     strip: {
         none: true,
@@ -16523,12 +16524,12 @@ cc_prebuilt_library_shared {
                 "libcam.hal3a.log",
                 "libmtkcam_stdutils",
                 "libcameracustom.lens",
-                "mot_devonf_ov50a_mipi_raw_row_IdxMgr",
                 "mot_devonf_ov50a_mipi_raw_IdxMgr",
-                "mot_devonf_hi1634q_mipi_raw_row_IdxMgr",
+                "mot_devonf_ov50a_mipi_raw_row_IdxMgr",
                 "mot_devonf_hi1634q_mipi_raw_IdxMgr",
-                "mot_devonf_s5k4h7_mipi_raw_IdxMgr",
+                "mot_devonf_hi1634q_mipi_raw_row_IdxMgr",
                 "mot_devonf_s5k4h7_mipi_raw_row_IdxMgr",
+                "mot_devonf_s5k4h7_mipi_raw_IdxMgr",
                 "libmtkcam_modulehelper",
                 "mtk000_mipi_raw_IdxMgr",
                 "libc++",
@@ -16552,12 +16553,12 @@ cc_prebuilt_library_shared {
                 "libcam.hal3a.log",
                 "libmtkcam_stdutils",
                 "libcameracustom.lens",
-                "mot_devonf_ov50a_mipi_raw_row_IdxMgr",
                 "mot_devonf_ov50a_mipi_raw_IdxMgr",
-                "mot_devonf_hi1634q_mipi_raw_row_IdxMgr",
+                "mot_devonf_ov50a_mipi_raw_row_IdxMgr",
                 "mot_devonf_hi1634q_mipi_raw_IdxMgr",
-                "mot_devonf_s5k4h7_mipi_raw_IdxMgr",
+                "mot_devonf_hi1634q_mipi_raw_row_IdxMgr",
                 "mot_devonf_s5k4h7_mipi_raw_row_IdxMgr",
+                "mot_devonf_s5k4h7_mipi_raw_IdxMgr",
                 "libmtkcam_modulehelper",
                 "mtk000_mipi_raw_IdxMgr",
                 "libc++",
@@ -30043,7 +30044,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libmnl",
+    name: "libmnl_vendor",
+    stem: "libmnl",
     owner: "motorola",
     strip: {
         none: true,
@@ -33546,6 +33548,7 @@ cc_prebuilt_library_shared {
     compile_multilib: "64",
     prefer: true,
     system_ext_specific: true,
+    allow_undefined_symbols: true,
 }
 
 cc_prebuilt_library_shared {
@@ -35358,6 +35361,7 @@ cc_prebuilt_binary {
     },
     prefer: true,
     soc_specific: true,
+    allow_undefined_symbols: true,
 }
 
 cc_prebuilt_binary {
